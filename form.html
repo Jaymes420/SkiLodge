@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>E-Z Ski Booking Form</title>
+     <link href='https://fonts.googleapis.com/css?family=Gugi' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="style/view.css" media="all">
+<script type="text/javascript" src="js/view.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+</head>
+<body id="main_body" >
+    
+     <nav class="nav">
+
+        <ul>
+ <li><a href="index.html">Home</a></li>
+            <li class="book"><a href="form.html">Book Now!</a></li>
+            <p></p>
+            <li><a href="cabins.html"> Accommodation</a></li>
+            <p></p>
+            <li><a href="rental.html"> Equipment Hire</a></li>
+            <p></p>
+            <li><a href="about.html"> About Us</a></li>
+
+        </ul>
+
+    </nav>
+	
+    <div class="hero-section">
+
+    </div>
+    
+	<img id="top" src="img/top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>E-Z Ski Booking Form</a></h1>
+		<form id="form_41526" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>E-Z Ski Booking Form</h2>
+			<p>Book online and receive 20% off your first visit!</p>
+		</div>						
+			<ul >
+			
+					<li id="li_2" >
+		<label class="description" for="element_2">Full Name </label>
+		<span>
+			<input id="element_2_1" name= "element_2_1" class="element text" maxlength="255" size="8" value=""/>
+			<label>First</label>
+		</span>
+		<span>
+			<input id="element_2_2" name= "element_2_2" class="element text" maxlength="255" size="14" value=""/>
+			<label>Last</label>
+		</span> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Email Address </label>
+		<div>
+			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Phone Number </label>
+		<div>
+			<input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_1" >
+		<label class="description" for="element_1">Date of Arivial  </label>
+		<span>
+			<input id="element_1_1" name="element_1_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_1_1">MM</label>
+		</span>
+		<span>
+			<input id="element_1_2" name="element_1_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_1_2">DD</label>
+		</span>
+		<span>
+	 		<input id="element_1_3" name="element_1_3" class="element text" size="4" maxlength="4" value="" type="text">
+			<label for="element_1_3">YYYY</label>
+		</span>
+	
+		<span id="calendar_1">
+			<img id="cal_img_1" class="datepicker" src="img/calendar.gif" alt="Pick a date.">	
+		</span>
+		<script type="text/javascript">
+			Calendar.setup({
+			inputField	 : "element_1_3",
+			baseField    : "element_1",
+			displayArea  : "calendar_1",
+			button		 : "cal_img_1",
+			ifFormat	 : "%B %e, %Y",
+			onSelect	 : selectDate
+			});
+		</script>
+		 
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Lengh of Trip </label>
+		<div>
+		<select class="element select small" id="element_5" name="element_5"> 
+			<option value="" selected="selected"></option>
+<option value="1" >3</option>
+<option value="2" >7</option>
+<option value="3" >14</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">Cabin of Choice </label>
+		<span>
+			<input id="element_6_1" name="element_6_1" class="element checkbox" type="radio" value="1" />
+<label class="choice" for="element_6_1">Cabin 1</label>
+<input id="element_6_2" name="element_6_2" class="element checkbox" type="radio" value="1" />
+<label class="choice" for="element_6_2">Cabin 2</label>
+<input id="element_6_3" name="element_6_3" class="element checkbox" type="radio" value="1" />
+<label class="choice" for="element_6_3">Cabin 3</label>
+
+		</span> 
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="41526" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Get a Quote" />
+		</li>
+			</ul>
+		</form>	
+		
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+    <section class="back">
+    <a href="index.html">Back</a>
+    </section>
+	</body>
+</html>
